@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Corrida",
+    "description": "Correr a um ritmo constante ao ar livre ou na esteira.",
+    "fatBurn": 600
+  },
+  {
+    "id": 2,
+    "name": "Natação",
+    "description": "Nadar em uma piscina a um ritmo moderado.",
+    "fatBurn": 500
+  },
+  {
+    "id": 3,
+    "name": "Ciclismo",
+    "description": "Andar de bicicleta em terreno plano ou montanhoso.",
+    "fatBurn": 400
+  },
+  {
+    "id": 4,
+    "name": "Pular Corda",
+    "description": "Pular corda de forma contínua e ritmada.",
+    "fatBurn": 700
+  },
+  {
+    "id": 5,
+    "name": "Yoga",
+    "description": "Praticar ioga para melhorar flexibilidade e relaxamento.",
+    "fatBurn": 250
+  },
+  {
+    "id": 6,
+    "name": "Musculação",
+    "description": "Levantar pesos em uma academia para fortalecer os músculos.",
+    "fatBurn": 300
+  },
+  {
+    "id": 7,
+    "name": "Aeróbica",
+    "description": "Participar de uma aula de aeróbica com música animada.",
+    "fatBurn": 400
+  },
+  {
+    "id": 8,
+    "name": "Pilates",
+    "description": "Realizar exercícios de Pilates para fortalecer o núcleo e melhorar a postura.",
+    "fatBurn": 200
+  },
+  {
+    "id": 9,
+    "name": "Kickboxing",
+    "description": "Participar de uma aula de kickboxing para condicionamento físico.",
+    "fatBurn": 600
+  },
+  {
+    "id": 10,
+    "name": "Hidroginástica",
+    "description": "Fazer exercícios aquáticos em uma piscina para baixar impacto nas articulações.",
+    "fatBurn": 300
+  }
+]

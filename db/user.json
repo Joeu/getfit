@@ -1,0 +1,15 @@
+{
+  "name": "Joao",
+  "age": 30,
+  "height": 175,
+  "wheight": 90,
+  "goals": {
+    "diet": 2000,
+    "burn": 1000
+  },
+  "diet": [],
+  "exercises": [],
+  "preferences": {
+    "theme": "light"
+  }
+}
