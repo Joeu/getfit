@@ -21,7 +21,7 @@ import userExercisesReducer from './src/Reducers/ExercisesReducer';
 import './src/i18n/config';
 import {usePreferences} from './src/hooks/usePreferences';
 
-import DrawerMenu from './src/Components/Menu/DrawerMenu';
+import DrawerNav from './src/Navigation/Drawer';
 
 // import {REACT_APP_EXERCISES_ENDPOINT} from '@env';
 
@@ -70,7 +70,7 @@ function App(): JSX.Element {
                       setTotal: setTotalBurn,
                     },
                   }}>
-                  <DrawerMenu />
+                  <DrawerNav />
                 </SummaryCountersContext.Provider>
               </DailyFeedContext.Provider>
             </DailyFeedDispatchContext.Provider>

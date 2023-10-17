@@ -1,8 +1,7 @@
 import React from 'react';
 
 import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
-import Food from '../Screens/Food';
-import Exercise from '../Screens/Exercise';
+
 import {QueryClient, QueryClientProvider} from '@tanstack/react-query';
 import Home from '../Screens/Home';
 import {useTranslation} from 'react-i18next';
@@ -24,6 +23,7 @@ export default function BottomNavigator() {
           name={t('home')}
           component={Home}
           options={{
+            tabBarColor: 'yellow',
             tabBarIcon: () => <IconButton icon="home" size={24} />,
           }}
         />
