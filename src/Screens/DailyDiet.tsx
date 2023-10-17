@@ -9,7 +9,6 @@ import TogglableListItem from '../Components/ListItem/TogglableListItem';
 import EmptyListScreen from '../Components/Utils/EmptyList';
 import {useTranslation} from 'react-i18next';
 import {DietActions} from '../Reducers/DietReducer';
-import uuid = require('react-uuid');
 
 const DailyDiet = () => {
   const {diet} = useContext(DailyFeedContext);
