@@ -8,7 +8,8 @@ import {Avatar, Divider} from 'react-native-paper';
 import ThemeSection from './ThemeSection';
 import {styles} from './Styles';
 
-const DrawerContent = props => (
+// improve typing
+const DrawerContent = (props: any) => (
   <DrawerContentScrollView {...props}>
     <View style={styles.container}>
       <Avatar.Image

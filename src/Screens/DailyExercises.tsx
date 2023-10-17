@@ -9,6 +9,7 @@ import TogglableListItem from '../Components/ListItem/TogglableListItem';
 import EmptyListScreen from '../Components/Utils/EmptyList';
 import {useTranslation} from 'react-i18next';
 import {ExercisesActions} from '../Reducers/ExercisesReducer';
+import {Exercise} from '../types/entities';
 
 const DailyExercises = () => {
   const {exercises} = useContext(DailyFeedContext);
@@ -18,7 +19,7 @@ const DailyExercises = () => {
 
   const {t} = useTranslation();
 
-  const toggleComplete = item => {
+  const toggleComplete = (item: Exercise) => {
     const {fatBurn} = item;
     setTotal(total + fatBurn);
   };

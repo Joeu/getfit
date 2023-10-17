@@ -7,9 +7,11 @@ import {DailyFeedDispatchContext} from '../Contexts/DailyFeedContext';
 import {ExercisesActions} from '../Reducers/ExercisesReducer';
 import EmptyListScreen from '../Components/Utils/EmptyList';
 import useSimulatedFetch from '../hooks/useSimulatedFetch';
+import {Exercise as ExerciseType} from '../types/entities';
 
-const getExercises = () => {
+const getExercises = (): Array<any> => {
   // use Axios
+  // change typing
   return exercises;
 };
 
@@ -24,7 +26,7 @@ export default function Exercise() {
       <View>
         <FlatList
           data={data}
-          keyExtractor={item => item.id}
+          keyExtractor={(item: ExerciseType) => item.id}
           renderItem={({item}) => (
             <ItemCard
               data={item}

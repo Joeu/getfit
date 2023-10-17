@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from 'react';
+import {Combined, Exercise, Food} from '../types/entities';
 
-const useSimulatedFetch = getter => {
-  const [data, setData] = useState([]);
+const useSimulatedFetch = (getter: () => Array<Combined>) => {
+  const [data, setData] = useState<Array<any>>([]);
   const [status, setStatus] = useState('');
 
   useEffect(() => {

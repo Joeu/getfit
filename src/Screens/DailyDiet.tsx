@@ -9,6 +9,7 @@ import TogglableListItem from '../Components/ListItem/TogglableListItem';
 import EmptyListScreen from '../Components/Utils/EmptyList';
 import {useTranslation} from 'react-i18next';
 import {DietActions} from '../Reducers/DietReducer';
+import {Food} from '../types/entities';
 
 const DailyDiet = () => {
   const {diet} = useContext(DailyFeedContext);
@@ -18,7 +19,7 @@ const DailyDiet = () => {
 
   const {t} = useTranslation();
 
-  const toggleComplete = item => {
+  const toggleComplete = (item: Food) => {
     const {calories} = item.nutritionFacts;
     setTotal(total + calories);
   };

@@ -2,19 +2,24 @@ type Common = {
   id: string;
   name: string;
   description: string;
-  time: Date;
+  time?: Date;
+  repeat?: string;
 };
 
 export type Exercise = Common & {
   fatBurn: number;
-  repeat: string;
 };
 
 type NutritionFacts = {
-  kcal: number;
-  carb: number;
-  protein: number;
-  fat: number;
+  nutritionFacts: {
+    calories: number;
+    protein: number;
+    carbs: number;
+    fat: number;
+    fiber: number;
+  };
 };
 
 export type Food = Common & NutritionFacts;
+
+export type Combined = Food | Exercise;

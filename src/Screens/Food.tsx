@@ -7,9 +7,11 @@ import ItemCard from '../Components/ListItem/ListItem';
 import {DietActions} from '../Reducers/DietReducer';
 import useSimulatedFetch from '../hooks/useSimulatedFetch';
 import EmptyListScreen from '../Components/Utils/EmptyList';
+import {Food as FoodType} from '../types/entities';
 
-const getFood = () => {
+const getFood = (): Array<any> => {
   // use axios
+  // change typing
   return food;
 };
 
@@ -24,7 +26,7 @@ export default function Food() {
       <View>
         <FlatList
           data={data}
-          keyExtractor={item => item.id}
+          keyExtractor={(item: FoodType) => item.id}
           renderItem={({item}) => (
             <ItemCard
               data={item}
